@@ -130,6 +130,12 @@ function App() {
                 and command over Java, Python, Data Structures, and Algorithms.
               </p>
 
+              <div className="signal-row" aria-label="Current focus">
+                <span>Building React interfaces</span>
+                <span>Designing APIs</span>
+                <span>Solving DSA problems</span>
+              </div>
+
               <div className="button-row">
                 <a className="button button--primary" href="#projects">
                   View projects
@@ -166,6 +172,11 @@ function App() {
                     Building clean interfaces, backend APIs, and database-backed products with a
                     problem-solving mindset.
                   </p>
+                </div>
+                <div className="profile-card__tags" aria-label="Core strengths">
+                  <span>ReactJS</span>
+                  <span>NodeJS</span>
+                  <span>MongoDB</span>
                 </div>
               </div>
 
@@ -222,8 +233,9 @@ function App() {
             </div>
 
             <div className="skills-grid">
-              {skills.map((group) => (
+              {skills.map((group, index) => (
                 <article className="skill-card" key={group.title}>
+                  <span className="skill-card__number">{String(index + 1).padStart(2, '0')}</span>
                   <h3>{group.title}</h3>
                   <div className="chip-list">
                     {group.items.map((item) => (
@@ -249,8 +261,16 @@ function App() {
             <div className="project-grid">
               {projects.map((project) => (
                 <article className="project-card" key={project.title}>
-                  <div className="project-visual">
-                    <img src={project.image} alt={project.imageAlt} />
+                  <div className="project-browser">
+                    <div className="project-browser__bar" aria-hidden="true">
+                      <span />
+                      <span />
+                      <span />
+                      <small>{project.title}.live</small>
+                    </div>
+                    <div className="project-visual">
+                      <img src={project.image} alt={project.imageAlt} />
+                    </div>
                   </div>
                   <div className="project-card__body">
                     <p className="project-type">{project.type}</p>
