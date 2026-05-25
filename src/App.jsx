@@ -60,15 +60,25 @@ const projects = [
     image: '/projects/eventflow-home.png',
     imageAlt: 'EventFlow home page with a dark event booking hero section',
   },
+  // {
+  //   title: 'ChatApp',
+  //   type: 'Live chat, calls, and video calls',
+  //   href: 'https://chatapp-frontend-ten-sepia.vercel.app/',
+  //   summary:
+  //     'A real-time communication app focused on live conversations, voice calls, and video calling between users.',
+  //   stack: ['ReactJS', 'NodeJS', 'ExpressJS', 'Realtime'],
+  //   image: '/projects/chatapp-home.png',
+  //   imageAlt: 'ChatApp home screen with conversation sidebar and empty chat state',
+  // },
   {
-    title: 'ChatApp',
-    type: 'Live chat, calls, and video calls',
-    href: 'https://chatapp-frontend-ten-sepia.vercel.app/',
-    summary:
-      'A real-time communication app focused on live conversations, voice calls, and video calling between users.',
-    stack: ['ReactJS', 'NodeJS', 'ExpressJS', 'Realtime'],
-    image: '/projects/chatapp-home.png',
-    imageAlt: 'ChatApp home screen with conversation sidebar and empty chat state',
+  title: 'Currency Converter',
+  type: 'Real-Time Currency Exchange App',
+  href: 'https://currency-exchange-five-rho.vercel.app/',
+  summary:
+    'A responsive currency converter built using HTML, CSS, and JavaScript that fetches real-time exchange rates using API integration.',
+  stack: ['HTML', 'CSS', 'JavaScript', 'API'],
+  image: '/projects/currency-converter.png',
+  imageAlt: 'Currency Converter web application interface',
   },
 ];
 
